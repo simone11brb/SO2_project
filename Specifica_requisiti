@@ -1,0 +1,5 @@
+1. Dato un testo in Italiano, produca una tabella contenente per ogni parola del testo le
+parole immediatamente successive e la loro frequenza di occorrenza nel testo;
+	1.1 scrivere una funzione che prende come parametro un file e salvi il testo in un array di stringhe
+	1.2 scrivere una funzione che prende in input un array di stringhe e conteggi la frequenza delle parole. 
+		1.2.1 creare un dizionario che data una parola memorizzi la successiva e la sua frequenza  (della successiva).
