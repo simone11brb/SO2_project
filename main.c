@@ -49,8 +49,10 @@ int main() {
     // Chiudi il file
     fclose(file);
 
-    // Stampa l'array
-    print_array(list);
+    int lunghezza = sizeof(list)/sizeof(list[0]);
+    for(int i = 0; i< lunghezza; i++){
+        printf("%s\n", list[i]);
+    }
 
     return 0;
 }
