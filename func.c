@@ -73,3 +73,15 @@ char** createStringArrayFromFile(FILE *file, int numWords) {
 
     return list;
 }
+
+void print_array(char** stringArray, int numWords){
+    for (int i = 0; i < numWords; i++) {
+        printf("%s\n", stringArray[i]);
+    }
+
+    // Deallocazione della memoria
+    for (int i = 0; i < numWords; i++) {
+        free(stringArray[i]);
+    }
+    free(stringArray);
+}

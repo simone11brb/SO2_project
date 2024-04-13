@@ -22,17 +22,7 @@ int main() {
         return 1;
     }
 
-    // Stampa le parole
-    for (int i = 0; i < numWords; i++) {
-        printf("%s\n", stringArray[i]);
-    }
-
-    // Deallocazione della memoria
-    for (int i = 0; i < numWords; i++) {
-        free(stringArray[i]);
-    }
-    free(stringArray);
-
+    print_array(stringArray, numWords);
     fclose(file);
 
     return 0;
